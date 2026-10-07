@@ -1,6 +1,6 @@
 # Moonlight Café — fictional café created for a portfolio/demo project.
-# TODO: replace the example domain below with the real production domain.
+# Sitemap points at the deployed GitHub Pages address; update if a custom domain is added.
 User-agent: *
 Allow: /
 
-Sitemap: https://moonlight-cafe.example/sitemap.xml
+Sitemap: https://dev-asher.github.io/moonlight-cafe-website/sitemap.xml

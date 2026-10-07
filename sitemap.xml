@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Moonlight Café — fictional café created for a portfolio/demo project.
-     TODO: replace the example domain below with the real production domain. -->
+     Deployed to GitHub Pages; update the URL if a custom domain is added. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://moonlight-cafe.example/</loc>
+    <loc>https://dev-asher.github.io/moonlight-cafe-website/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
