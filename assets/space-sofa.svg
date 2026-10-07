@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#111726"/>
+      <stop offset=".72" stop-color="#0c111d"/>
+      <stop offset=".721" stop-color="#0a0e1a"/>
+      <stop offset="1" stop-color="#080b14"/>
+    </linearGradient>
+    <radialGradient id="lampglow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#f3cc8a" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#f3cc8a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#243050"/>
+      <stop offset="1" stop-color="#171f31"/>
+    </linearGradient>
+    <linearGradient id="seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2740"/>
+      <stop offset="1" stop-color="#141a2b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#room)"/>
+
+  <ellipse cx="420" cy="560" rx="330" ry="52" fill="#121826"/>
+  <ellipse cx="420" cy="560" rx="330" ry="52" fill="none" stroke="#e9b96e" stroke-opacity=".18" stroke-width="3"/>
+
+  <g>
+    <rect x="120" y="120" width="96" height="120" rx="6" fill="#0a0e1a"/>
+    <rect x="120" y="120" width="96" height="120" rx="6" fill="none" stroke="#e9b96e" stroke-opacity=".45" stroke-width="3"/>
+    <path d="M176 152a24 24 0 1 0 20 36 28 28 0 1 1-20-36z" fill="#e9b96e" opacity=".8"/>
+    <circle cx="200" cy="222" r="3" fill="#e9b96e" opacity=".6"/>
+  </g>
+
+  <g>
+    <path d="M676 0h12v118h-12z" fill="#0a0e1a"/>
+    <path d="M628 118h108l30 76H598z" fill="url(#shade)"/>
+    <path d="M628 118h108l12 30H616z" fill="#2a3550"/>
+    <ellipse cx="682" cy="200" rx="20" ry="11" fill="#f3cc8a"/>
+    <path d="M614 200h136l74 300H540z" fill="url(#lampglow)"/>
+    <ellipse cx="682" cy="516" rx="180" ry="58" fill="url(#lampglow)" opacity=".8"/>
+  </g>
+
+  <g>
+    <rect x="196" y="286" width="330" height="150" rx="26" fill="url(#seat)"/>
+    <rect x="196" y="286" width="330" height="150" rx="26" fill="none" stroke="#2a3550" stroke-width="3"/>
+    <path d="M300 286v150M416 286v150" stroke="#0f1524" stroke-width="4"/>
+    <rect x="170" y="330" width="60" height="150" rx="24" fill="#1a2136"/>
+    <rect x="496" y="330" width="60" height="150" rx="24" fill="#1a2136"/>
+    <rect x="196" y="416" width="330" height="76" rx="20" fill="#1c2740"/>
+    <path d="M300 416h116v76H300z" fill="#202c48" opacity=".8"/>
+    <g fill="#0a0e1a">
+      <rect x="214" y="486" width="18" height="40" rx="6"/>
+      <rect x="490" y="486" width="18" height="40" rx="6"/>
+    </g>
+    <path d="M236 340c30-16 66-16 96 0" stroke="#e9b96e" stroke-opacity=".3" stroke-width="4" fill="none"/>
+  </g>
+
+  <g>
+    <rect x="360" y="500" width="220" height="16" rx="8" fill="#1d2740"/>
+    <rect x="376" y="516" width="12" height="52" fill="#141a2b"/>
+    <rect x="552" y="516" width="12" height="52" fill="#141a2b"/>
+    <g>
+      <ellipse cx="420" cy="500" rx="34" ry="7" fill="#0a0e1a" opacity=".5"/>
+      <path d="M394 472h52l-6 28h-40z" fill="#f4efe6"/>
+      <path d="M446 476h10a9 9 0 0 1 0 18h-7" fill="none" stroke="#f4efe6" stroke-width="6"/>
+      <path d="M410 468c0-9 4-12 4-19M426 468c0-9 4-12 4-19" stroke="#f4efe6" stroke-opacity=".45" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </g>
+    <g>
+      <rect x="474" y="484" width="76" height="10" rx="3" fill="#e9b96e" opacity=".75"/>
+      <rect x="480" y="474" width="76" height="10" rx="3" fill="#f4efe6" opacity=".5"/>
+      <rect x="480" y="474" width="10" height="10" fill="#e9b96e" opacity=".9"/>
+    </g>
+  </g>
+
+  <g>
+    <path d="M700 566h56l-8-72h-40z" fill="#171f31"/>
+    <path d="M728 494c0-52 6-84 6-118" stroke="#3f6f5a" stroke-width="6" fill="none"/>
+    <path d="M734 400c34 4 48-18 46-44-30-4-50 14-46 44z" fill="#3f6f5a"/>
+    <path d="M734 430c-30 8-46-10-48-34 26-6 46 8 48 34z" fill="#4a8069"/>
+    <path d="M734 372c-24-14-28-38-16-58 22 10 28 34 16 58z" fill="#4a8069" opacity=".9"/>
+  </g>
+</svg>

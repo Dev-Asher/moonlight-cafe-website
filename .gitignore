@@ -1,0 +1,7 @@
+# Secrets — never commit API keys or environment files.
+# Google Maps Embed API keys go in js/map-config.js via deploy-time injection
+# (see the comments in that file). If you keep a local overrides file, it is
+# ignored here so a real key can never be committed by accident.
+js/map-config.local.js
+.env
+.env.*

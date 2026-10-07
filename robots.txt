@@ -1,0 +1,6 @@
+# Moonlight Café — fictional café created for a portfolio/demo project.
+# TODO: replace the example domain below with the real production domain.
+User-agent: *
+Allow: /
+
+Sitemap: https://moonlight-cafe.example/sitemap.xml
