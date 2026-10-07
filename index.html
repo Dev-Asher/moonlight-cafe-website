@@ -267,10 +267,8 @@
         <h2 id="contact-title">Contact</h2>
         <p class="contact-lede">Questions, a lost umbrella, or a note about the quiet corner? Send a message and we’ll write back between pours.</p>
 
-        <!-- Contact form backend: no endpoint is hardcoded. Set the Formspree
-             form endpoint in js/form-config.js
-             (window.CAFE_FORM_CONFIG.formspreeEndpoint). Until it is set, the
-             form validates locally and shows a “not connected” notice. -->
+        <!-- Contact form backend: the Formspree endpoint is set in
+             js/form-config.js (window.CAFE_FORM_CONFIG.formspreeEndpoint). -->
         <div class="form-status form-success" id="contact-success" role="status" tabindex="-1" hidden>
           <p class="form-status-text" id="contact-success-text"></p>
           <button class="btn btn-secondary" type="button" id="contact-reset">Send another message</button>
@@ -278,6 +276,9 @@
         <p class="form-status form-error" id="contact-error" role="alert" hidden></p>
 
         <form class="contact-form" id="contact-form" novalidate>
+          <input type="hidden" name="_subject" value="New message from the Moonlight Café website">
+          <input class="visually-hidden" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
           <div class="form-field">
             <label for="contact-name">Name</label>
             <input id="contact-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80" data-field aria-describedby="contact-name-error">
