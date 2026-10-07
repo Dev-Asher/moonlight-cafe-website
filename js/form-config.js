@@ -3,34 +3,18 @@
 /*
  * Contact form backend configuration (Formspree).
  *
- * NO FORMSPREE ENDPOINT OR SECRET IS STORED IN THIS REPOSITORY.
+ * The endpoint below is connected and live. A Formspree form-action URL is
+ * public — it is sent from the browser and is NOT a secret credential — so it
+ * is safe to keep in this repository. Protect the form with Formspree's own
+ * spam filtering and domain restrictions configured in your Formspree account.
  *
- * Insert your Formspree form endpoint below when it is available. It looks
- * like this (this is a shape example only — not a real endpoint):
- *
- *     https://formspree.io/f/<yourFormId>
- *
- * Find it at https://formspree.io → your form → the integration / endpoint
- * shown in the form's setup instructions.
- *
- * Configuration options (pick one — never commit a real endpoint until you
- * are ready to go live):
- *
- *   1. Deploy-time injection (recommended). Have your host / build step
- *      generate this file from an environment variable, e.g.
- *      `FORMSPREE_ENDPOINT`, so the value is not committed to Git.
- *   2. Local edit. Set `formspreeEndpoint` below, test it, then decide how
- *      you want to ship it.
- *
- * The endpoint is a public form action URL, not a secret credential, and
- * Formspree is designed to receive it from the browser. Still, keep this file
- * free of a live value in source control and rely on Formspree's own spam
- * protection plus domain restrictions in your Formspree account.
- *
- * While this is empty, the form validates locally and shows a clear
- * "not connected" message instead of submitting anywhere.
+ * To point the form elsewhere, replace the value below with your endpoint
+ * (formspree.io → your form → integration); it looks like
+ * https://formspree.io/f/<yourFormId>. If the value is empty, the form still
+ * validates locally and shows a clear "not connected" message instead of
+ * submitting anywhere.
  */
 
 window.CAFE_FORM_CONFIG = window.CAFE_FORM_CONFIG || {
-  formspreeEndpoint: ""
+  formspreeEndpoint: "https://formspree.io/f/mbgddaap"
 };
